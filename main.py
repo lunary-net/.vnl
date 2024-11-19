@@ -8,6 +8,12 @@ def execute_code(language, code):
         command = ['python', '-c', code]
     elif language == 'javascript':
         command = ['node', '-e', code]
+    elif language == 'typescript':
+        with open('temp.ts', 'w') as f:
+            f.write(code)
+        subprocess.run(['tsc', 'temp.ts'])
+        result = subprocess.run(['node', 'temp.js'], capture_output=True, text=True)
+        return result.stdout if result.returncode == 0 else result.stderr
     elif language == 'bash':
         command = ['bash', '-c', code]
     elif language == 'html':
@@ -89,6 +95,9 @@ def execute_code(language, code):
     else:
         return "Unsupported language"
 
+    result = subprocess.run(command, capture_output=True, text=True)
+    return result.stdout if result.returncode == 0 else result.stderr
+
 def select_language(command):
     if command.startswith("selectCode language ('"):
         languages = command[len("selectCode language ('"):-2].split(", ")
@@ -117,6 +126,13 @@ def read_vnl_file(file_path):
 # Example usage
 file_path = 'script.vnl'
 selected_language, user_code = read_vnl_file(file_path)
+
+if selected_language:
+    output = execute_code(selected_language, user_code)
+    print(f"Output from {selected_language}:\n{output}")
+else:
+    print("Invalid .vnl file format or language selection command")
+
 
 if selected_language:
     output = execute_code(selected_language, user_code)
