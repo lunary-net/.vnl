@@ -17,8 +17,11 @@ This repository contains a universal code interpreter that supports multiple lan
     main.py
     ```
 
+INFO: you need to have download [python](https://www.python.org/downloads/), if you have it run in Terminal 'python main.py'
+INFO: If you wanted add some code langagues send me message on discord, and use 'script.vnl' only name if you not use script not found or you can change it in main.py
+
 ## Example
 
-Example `.vnl` file content:
+Example `script.vnl` file content:
 
 
