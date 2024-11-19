@@ -14,7 +14,7 @@ This repository contains a universal code interpreter that supports multiple lan
 2. Run the interpreter:
 
     ```sh
-    python universal_code_interpreter.py
+    main.py
     ```
 
 ## Example
