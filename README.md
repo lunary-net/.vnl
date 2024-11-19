@@ -1,6 +1,6 @@
 # Universal Code Interpreter
 
-This repository contains a universal code interpreter that supports multiple languages including Python, JavaScript, HTML, CSS, Bash, PHP, Ruby, JSON, SQL, Perl, Lua, C, C++, Java, Go, Rust, and Swift.
+This repository contains a universal code interpreter that supports multiple languages including Python, JavaScript, HTML, CSS, Bash, PHP, Ruby, JSON, SQL, Perl, Lua, C, C++, Java, Go, Rust, TS and Swift.
 
 ## Usage
 
