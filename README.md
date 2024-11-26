@@ -14,14 +14,13 @@ This repository contains a universal code interpreter that supports multiple lan
 2. Run the interpreter:
 
     ```sh
-    main.py
+  python main.py
     ```
 
-INFO: you need to have download [python](https://www.python.org/downloads/), if you have it run in Terminal 'python main.py'
-If you wanted add some code langagues send me message on discord, and use 'script.vnl' only name if you not use script not found or you can change it in main.py
+INFO: you need to have download [python](https://www.python.org/downloads/), Every files name are found, if have errors msg me on dsc 'vojtaa3181mc'
 
 ## Example
 
-Example `script.vnl` file content:
+Example `example.vnl` file content:
 
 
