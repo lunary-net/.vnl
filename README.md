@@ -14,7 +14,8 @@ This repository contains a universal code interpreter that supports multiple lan
 2. Run the interpreter:
 
     ```
-    sh python main.py
+    sh
+    python main.py
     ```
 
 INFO: you need to have download [python](https://www.python.org/downloads/), Every files name are found, if have errors msg me on dsc 'vojtaa3181mc'
